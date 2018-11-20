@@ -1,0 +1,45 @@
+{
+  "name": "@sagi.io/doh",
+  "version": "0.0.1",
+  "description": "RFC-8484 Compliant DNS-over-HTTPS Command Line Tool",
+  "main": "index.js",
+  "author": "Sagi Kedmi <git@sagi.io> (https://sagi.io)",
+  "license": "MIT",
+  "bin": {
+    "doh": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "prettier:check": "prettier --list-different index.js",
+    "eslint": "eslint index.js",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@sagi.io/dns-over-https": "^0.0.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
+    "prettier": "^1.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagi/doh-node.git"
+  },
+  "keywords": [
+    "dns-over-https",
+    "doh",
+    "cli",
+    "command line",
+    "dns over https",
+    "dns",
+    "https",
+    "dnshttps",
+    "security",
+    "privacy"
+  ]
+}
